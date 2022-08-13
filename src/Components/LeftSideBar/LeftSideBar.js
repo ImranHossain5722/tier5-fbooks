@@ -12,12 +12,13 @@ import group3 from "../../Assets/Images/group3.jpg";
 import group4 from "../../Assets/Images/grp.jpg";
 import { FiLink } from "react-icons/fi";
 import JS from "../../Assets/Images/js.png";
+import './LeftSideBar.css'
 
 const LeftSideBar = () => {
   return (
     <div className="">
       {/* home */}
-      <div class="flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+      <div class="leftSidebar flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
         <AiFillHome className=" text-3xl text-[#056BE1] " />
         <a
           href="#"
@@ -212,6 +213,27 @@ const LeftSideBar = () => {
           Poramming Hero...
         </a>
       </div>
+      <div class="flex items-center   dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+        <img className=" w-8 h-8 text-[#056BE1] rounded-full" src={group2} />
+        <a
+          href="#"
+          aria-current="true"
+          className="py-2 px-4 w-full text-black text-lg   dark:bg-gray-800 dark:border-gray-600"
+        >
+          Poramming Hero...
+        </a>
+      </div>
+      <div class="flex items-center   dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+        <img className=" w-8 h-8 text-[#056BE1] rounded-full" src={group2} />
+        <a
+          href="#"
+          aria-current="true"
+          className="py-2 px-4 w-full text-black text-lg   dark:bg-gray-800 dark:border-gray-600"
+        >
+          Poramming Hero...
+        </a>
+      </div>
+
     </div>
   );
 };

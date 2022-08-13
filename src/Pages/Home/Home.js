@@ -5,16 +5,19 @@ import RightSideBar from "../../Components/RightSideBar/RightSideBar";
 
 const Home = () => {
   return (
-    <div className="flex flex-wrap justify-between items-center max-w-screen-full ">
-      <div className="flex items-star bg-[#F0F2F5] h-screen ">
+    <div className="flex justify-between ">
+
+      <div className="flex  bg-[#F0F2F5] h-screen hover:overflow-y-scroll scroll-smooth w-[300px]">
         <LeftSideBar />
       </div> 
-      <div className="NewFeed flex items-start bg-white h-screen">
+      <div className="NewFeed flex  justify-center   bg-[#F0F2F5] px-11 w-[560px] h-screen">
         <NewsFeed />
       </div>
-      <div className="RightSideBar flex place-items-start bg-[#F0F2F5] h-screen">
+      <div className="flex  bg-[#d9dfe8] h-screen hover:overflow-y-scroll scroll-smooth w-[300px]">
         <RightSideBar />
       </div>
+
+
     </div>
   );
 };
