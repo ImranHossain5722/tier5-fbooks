@@ -1,5 +1,11 @@
 import React from 'react';
 import logo from '../../Assets/Images/Tier5Fbooks.png'
+import { GoSearch } from 'react-icons/go';
+import { BsPersonFill} from 'react-icons/bs';
+import { BsMessenger} from 'react-icons/bs';
+// import { IoNotifications} from 'react-icons/Io';
+import { BsFillBellFill} from 'react-icons/bs';
+
 
 const NavBar = () => {
     return (
@@ -12,14 +18,26 @@ const NavBar = () => {
             <img src={logo} class="mr-3 h-6 sm:h-9" alt="Logo" />
             
         </a>
-        <div class="flex items-center">
-            <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
-            <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+        <div className="flex items-center bg-gray-100  lg:w-1/2 rounded-2xl py-2 hover:bg-gray-200 " >
+            <GoSearch className='ml-[20px] text-sm text-gray-500' />
+            <input className='searchbar bg-[#80808000] text-black font-sembold pl-1 focus:outline-none '
+            placeholder='Search Tier5Fbooks '/>
+            
         </div>
 
-        <div class="flex place-items-end">
-            <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
-            <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+        <div class="flex place-items-end gap-3 ">
+        <div className="topbarIconItem bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
+            <BsMessenger className=' text-lg ' />
+           
+          </div>
+        <div className="topbarIconItem bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
+            <BsFillBellFill />
+           
+          </div>
+        <div className="topbarIconItem bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
+            <BsPersonFill />
+           
+          </div>
         </div>
 
     </div>
