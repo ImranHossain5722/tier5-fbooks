@@ -1,0 +1,31 @@
+.swiper-button-disabled {
+
+    display: none !important;
+}
+
+
+ .swiper-button-next {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    color: #020302;
+    padding: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.swiper-button-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    color: #060908;
+    padding: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}

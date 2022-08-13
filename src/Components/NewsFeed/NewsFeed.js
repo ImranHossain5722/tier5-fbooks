@@ -8,9 +8,10 @@ import stroy1 from "../../Assets/Images/story.jpg";
 import stroy2 from "../../Assets/Images/story1.jpg";
 import wp from "../../Assets/Images/wp.png";
 import'./NewsFeed.css'
+import Post from '../Post/Post';
 const NewsFeed = () => {
     return (
-        <div className=' '>
+        <div className='max-h-screen'>
             
 
             <div className='flex gap-4'>
@@ -108,9 +109,9 @@ const NewsFeed = () => {
                  </div>
 
                 </div>
-                
-                
+                     
            </div>
+           <Post/>
 
         </div>
     );

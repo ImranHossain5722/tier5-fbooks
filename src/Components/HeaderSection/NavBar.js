@@ -41,7 +41,7 @@ const NavBar = () => {
       <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-md py-2">
 
         <div class="flex  justify-between items-center  max-w-screen-full  py-2.5">
-          <a href="https://flowbite.com" class="flex items-start pl-4 ">
+          <a href="/" class="flex items-start pl-4 ">
             <img src={logo} class="mr-3 h-6 sm:h-9" alt="Logo" />
           </a>
 
