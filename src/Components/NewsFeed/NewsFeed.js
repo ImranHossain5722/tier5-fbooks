@@ -1,9 +1,12 @@
 import React from 'react';
+import imran from "../../Assets/Images/story_image.jpg";
 import jira from "../../Assets/Images/jira.jfif";
 import'./NewsFeed.css'
 import { AiOutlinePlus } from "react-icons/ai";
 import { FiCircle } from "react-icons/fi";
-import c from "../../Assets/Images/jira.jfif";
+import stroy1 from "../../Assets/Images/story.jpg";
+import stroy2 from "../../Assets/Images/story1.jpg";
+import wp from "../../Assets/Images/wp.png";
 import'./NewsFeed.css'
 const NewsFeed = () => {
     return (
@@ -13,7 +16,7 @@ const NewsFeed = () => {
             <div className='flex gap-4'>
                 <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
                 style={{
-                    background:`url(${jira})`,
+                    background:`url(${imran})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -32,7 +35,7 @@ const NewsFeed = () => {
                 </div>
                 <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
                 style={{
-                    background:`url(${jira})`,
+                    background:`url(${stroy1})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -43,14 +46,14 @@ const NewsFeed = () => {
                   
                   <div className='relative '>
 
-                  <FiCircle className='absolute bottom-24 left-5  text-white text-[20px]' />
+                  <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
                     <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
                  </div>
                 </div>
                 <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
                 style={{
-                    background:`url(${jira})`,
+                    background:`url(${stroy2})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -61,7 +64,7 @@ const NewsFeed = () => {
                   
                   <div className='relative '>
 
-                  <FiCircle className='absolute bottom-24 left-5  text-white text-[20px]' />
+                  <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
                     <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
                  </div>
@@ -69,7 +72,7 @@ const NewsFeed = () => {
                 </div>
                 <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
                 style={{
-                    background:`url(${jira})`,
+                    background:`url(${wp})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -80,7 +83,7 @@ const NewsFeed = () => {
                   
                   <div className='relative '>
 
-                  <FiCircle className='absolute bottom-24 left-5  text-white text-[20px]' />
+                  <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
                     <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
                  </div>
@@ -99,7 +102,7 @@ const NewsFeed = () => {
                   
                   <div className='relative '>
 
-                  <FiCircle className='absolute bottom-24 left-5  text-white text-[20px]' />
+                  <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
                     <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
                  </div>
