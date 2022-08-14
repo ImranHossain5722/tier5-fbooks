@@ -24,7 +24,7 @@ const NewsFeed = () => {
                   }}
                 >
                  <div className='bg-white  absolute 
-                 w-[130px] h-[75px] bottom-0 rounded-b-md'>
+                 w-[118px] h-[70px] bottom-0 rounded-b-md'>
                   
                   <div className='relative '>
 
@@ -49,7 +49,7 @@ const NewsFeed = () => {
 
                   <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
-                    <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
+                    <p className='text-white font-semibold  text-[13px] w-6 lg:w-full'>Jhon Adom </p>
                  </div>
                 </div>
                 <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
@@ -67,7 +67,7 @@ const NewsFeed = () => {
 
                   <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
-                    <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
+                    <p className=' text-white font-semibold  text-[13px] w-6 lg:w-full'>Jhon Adom </p>
                  </div>
 
                 </div>
@@ -86,11 +86,11 @@ const NewsFeed = () => {
 
                   <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
-                    <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
+                    <p className=' text-white font-semibold  text-[13px] w-6 lg:w-full'>Jhon Adom </p>
                  </div>
 
                 </div>
-                <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
+                {/* <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
                 style={{
                     background:`url(${jira})`,
                     backgroundSize: "cover",
@@ -105,10 +105,10 @@ const NewsFeed = () => {
 
                   <FiCircle className='absolute bottom-24 left-5  text-blue-500 text-[20px]' />
                   </div>
-                    <p className='text-center text-white font-semibold  text-[13px] p-5'>Jhon Adom </p>
+                    <p className= 'text-white font-semibold text-[13px]  w-6 lg:w-full'>Jhon Adom </p>
                  </div>
 
-                </div>
+                </div> */}
                      
            </div>
            {/* post  */}

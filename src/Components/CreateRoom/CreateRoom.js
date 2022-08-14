@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./CreateRoom.css";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { MdVideoCall } from "react-icons/md";
+import { FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft } from "react-icons/fa";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -42,14 +44,14 @@ const CreateRoom = () => {
               slidesPerView: 5,
             },
           }}
-          spaceBetween={2}
-          loop={true}
+          // spaceBetween={0}
+          loop={false}
           navigation={{
             prevEl: "#prev_slide",
             nextEl: "#next_slide",
           }}
           modules={[Autoplay, Navigation]}
-          autoplay={false}
+          autoplay={true}
           className="mySwiper"
           style={{ "--swiper-theme-color": "#27AE61" }}
           onInit={(swiper) => {
@@ -62,7 +64,7 @@ const CreateRoom = () => {
           <SwiperSlide>
 
 
-            <div className="py-6 flex items-center justify-center hover:fill-blue-500">
+            <div className="swiper-slide py-6 flex items-center justify-center hover:fill-blue-500">
               <div>
                 <button className=" flex btn">
                   <MdVideoCall /> Create room
@@ -72,9 +74,9 @@ const CreateRoom = () => {
           </SwiperSlide>
           {users?.map((user) => (
             <SwiperSlide key={user.id}>
-              <div class="avatar online">
+              <div class="avatar online ">
                 <div class="w-14 rounded-full">
-                  <img className="w-10 h-10 rounded-full" src={user.image} />
+                  <img className="w-10 h-10  rounded-full" src={user.image} />
                 </div>
               </div>
 
@@ -83,10 +85,10 @@ const CreateRoom = () => {
           ))}
           <div className="swiperSlide_button_group">
             <div className="swiper_button swiper_button_prev" ref={prevRef}>
-              <i class="fa-solid fa-angle-left"></i>
+            <FaAngleLeft className=" text-black"/>
             </div>
             <div className="swiper_button swiper_button_next" ref={nextRef}>
-              <i class="fa-solid fa-angle-right"></i>
+            <FaAngleRight/>
             </div>
           </div>
           

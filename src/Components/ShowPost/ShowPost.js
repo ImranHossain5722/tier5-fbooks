@@ -14,7 +14,11 @@ import { comment } from "postcss";
 import { AiOutlineLike } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
-const ShowPost = () => {
+const ShowPost = ({post}) => {
+
+   console.log(post)
+   const {Post,post_image_url,post_likes,} = post
+   
   return (
     <div className="">
       <div className="">
@@ -39,7 +43,7 @@ const ShowPost = () => {
             <h3 className="text-[18px] font-semibold mt-3 ml-[-8px]">
               Adom Jhon
             </h3>
-            <BsThreeDots className="relative  left-[130px] md:left-[202px] lg:left-[250px]  top-4" />
+            <BsThreeDots className="relative  left-[130px] md:left-[202px] lg:left-[200px]  top-4" />
             
           </div>
           <div>

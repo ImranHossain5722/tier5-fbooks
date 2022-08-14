@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import imran from "../../Assets/Images/story_image.jpg";
 import { RiVideoAddFill } from "react-icons/ri";
 import { MdOutlinePhotoLibrary  } from "react-icons/md";
@@ -7,6 +7,14 @@ import CreateRoom from '../CreateRoom/CreateRoom';
 import ShowPost from '../ShowPost/ShowPost';
 
 const Post = () => {
+
+  const [userPost , setUserPost] = useState ([]);
+  useEffect(() => {
+    fetch("user.json")
+      .then((response) => response.json())
+      .then((data) => setUserPost(data));
+    // .catch(err => console.error(err));
+  }, []);
     return (
         <div className=''>
             <div className='post mt-6 bg-white rounded-xl shadow-md  mx-auto max-w-sm md:max-w-md lg:max-w-[100%]'>
@@ -19,23 +27,23 @@ const Post = () => {
                 backgroundRepeat: "no-repeat",
               }} >
               </div>
-              {/* searc input field  */}
+              {/* search input field  */}
               <input className='flex justify-center mr-3  bg-gray-200 px-7 mx-auto  w-5/6 h-12 rounded-xl focus:outline-none hover:bg-gray-100'
               placeholder='Whats on your mind' />
             </div> 
             <div className='  h-[1px] bg-gray-200 '> </div>
 
-             <div className='flex mx-auto max-w-sm md:max-w-md lg:max-w-lg '>
-                 <div className=' flex items-center lg:gap-2  '>
-                 <RiVideoAddFill className="ml-[20px] text-[16px] lg:text-[20px] text-red-500" />
+             <div className='flex mx-auto max-w-sm md:max-w-md lg:max-w-lg py-3'>
+                 <div className=' flex items-center lg:gap-2 px-3 '>
+                 <RiVideoAddFill className="text-[16px] lg:text-[20px] text-red-500" />
                  <h2 className='text-gray-400 font-semibold text-[13px] lg:text-[16px]'>Live Video </h2>
                  </div>
-                 <div className=' flex items-center gap-2 p-5'>
-                 < MdOutlinePhotoLibrary  className="ml-[2px] text-[16px] lg:text-[20px] text-green-800" />
+                 <div className=' flex items-center gap-2 '>
+                 < MdOutlinePhotoLibrary  className=" text-[16px] lg:text-[20px] text-green-800" />
                  <h2 className='text-gray-400 font-semibold text-[13px] lg:text-[16px]'> Photo/ Video </h2>
                  </div>
-                 <div className=' flex items-center gap-2 p-5'>
-                 < GoSmiley  className="ml-[2px] text-[16px] lg:text-[20px] text-yellow-400" />
+                 <div className=' flex items-center gap-2'>
+                 < GoSmiley  className="text-[16px] lg:text-[20px] text-yellow-400" />
                  <h2 className='text-gray-400 font-semibold text-[13px] lg:text-[16px]'> Feeling/activity </h2>
                  </div>
              </div>
@@ -46,12 +54,14 @@ const Post = () => {
            </div>
 
            <div className="mt-6" >
-           <ShowPost/>
-           <ShowPost/>
-           <ShowPost/>
-           <ShowPost/>
-           <ShowPost/>
-           <ShowPost/>
+           {userPost.map((post) =>(
+                    <ShowPost key={post.id} post={post}
+                     />
+
+
+
+               ))}
+          
            </div>
             
              
