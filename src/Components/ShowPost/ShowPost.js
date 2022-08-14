@@ -3,6 +3,17 @@ import imran from "../../Assets/Images/story_image.jpg";
 import { GiEarthAmerica } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
 import Pogramming from "../../Assets/Images/post1.jpg";
+import like from '../../Assets/Images/like.svg'
+import heart from '../../Assets/Images/heart.svg'
+import care from '../../Assets/Images/care.svg'
+import sad from '../../Assets/Images/sad.svg'
+import haha from '../../Assets/Images/haha.svg'
+import angry from '../../Assets/Images/angry.svg'
+import wow from '../../Assets/Images/wow.svg'
+import { comment } from "postcss";
+import { AiOutlineLike } from "react-icons/ai";
+import { BiComment } from "react-icons/bi";
+import { RiShareForwardLine } from "react-icons/ri";
 const ShowPost = () => {
   return (
     <div className="">
@@ -42,7 +53,46 @@ const ShowPost = () => {
             <img className="pt-4 w-full " src={Pogramming} />
           </div>
           {/* like comment share */}
-          <div className="likeCommentShare">
+          <div className="likeCommentShar mb- ">
+            <div className="flex justify-between p-2 pb-4">
+
+                {/* imoje */}
+              <div className="flex gap-1">
+                  <img className="w-6 h-6" src={like} alt=""/>
+                  <img className="w-6 h-6" src={heart} alt=""/>
+                  <img className="w-6 h-6" src={care} alt=""/>
+                  <img className="w-6 h-6" src={angry} alt=""/>
+                  <img className="w-6 h-6" src={sad} alt=""/>
+                  <img className="w-6 h-6" src={haha} alt=""/>
+                  <img className="w-6 h-6" src={wow} alt=""/>
+
+              </div>
+              {/* comment */}
+              <div className="flex hover:underline cursor-pointer ">
+                <p>10</p>
+                <p>Comments</p>
+              </div>
+            </div>
+               
+               <div className=" flex justify-between p-4 px-8 mx-8 mb-4 border-y-2
+
+">
+                      <div className="flex items-center gap-1">
+                      <AiOutlineLike/> 
+                          <p>Like</p>
+                      </div>
+                      <div className="flex items-center gap-1">
+                      <BiComment/>
+                          <p>Comment</p>
+                      </div>
+                      <div className="flex items-center gap-1">
+                     <RiShareForwardLine />
+                          <p>Share</p>
+                      </div>
+
+
+               </div>
+
 
 
           </div>

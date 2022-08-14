@@ -23,7 +23,7 @@ const NewsFeed = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                 <div className='bg-white w-6  absolute 
+                 <div className='bg-white  absolute 
                  w-[130px] h-[75px] bottom-0 rounded-b-md'>
                   
                   <div className='relative '>
@@ -42,7 +42,7 @@ const NewsFeed = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                 <div className='w-6  absolute 
+                 <div className=' absolute 
                  w-[130px] h-[75px] bottom-0 rounded-b-md'>
                   
                   <div className='relative '>
@@ -60,7 +60,7 @@ const NewsFeed = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                 <div className='w-6  absolute 
+                 <div className='absolute 
                  w-[130px] h-[75px] bottom-0 rounded-b-md'>
                   
                   <div className='relative '>
@@ -79,7 +79,7 @@ const NewsFeed = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <div className='w-6  absolute 
+                  <div className='absolute 
                  w-[130px] h-[75px] bottom-0 rounded-b-md'>
                   
                   <div className='relative '>
@@ -98,7 +98,7 @@ const NewsFeed = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                 <div className='w-6  absolute 
+                 <div className='absolute 
                  w-[130px] h-[75px] bottom-0 rounded-b-md'>
                   
                   <div className='relative '>

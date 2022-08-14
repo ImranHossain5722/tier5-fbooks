@@ -18,7 +18,7 @@ const LeftSideBar = () => {
   return (
     <div className="">
       {/* home */}
-      <div class="leftSidebar flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+      <div className="leftSidebar flex items-center  hover:bg-[#E4E6E9] border-l-4 border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
         <AiFillHome className=" text-3xl text-[#056BE1] " />
         <a
           href="#"
