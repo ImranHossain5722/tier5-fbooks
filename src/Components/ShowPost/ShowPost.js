@@ -17,15 +17,14 @@ import { RiShareForwardLine } from "react-icons/ri";
 const ShowPost = ({singlePost}) => {
 
   //  console.log(singlePost)
-   const {post, post_image_url,post_likes, user_photo_url,user_name,post_time,conments} = singlePost
+   const {post, post_image_url,user_photo_url,user_name,post_time,conments} = singlePost
 
-  const [like ,setLike] = useState(post_likes)
+  const [post_likes ,setPost_likes] = useState(singlePost.post_likes)
   const [islike ,seIstLike] = useState(false)
 
-  // like 
   const likeHandeler =()=>{
-
-
+    setPost_likes(islike ? post_likes -1 : post_likes+1)
+    seIstLike(!islike)
   }
   return (
     <div className="">
@@ -70,7 +69,7 @@ const ShowPost = ({singlePost}) => {
               <div className="flex gap-1">
                   <img className="w-6 h-6" src={likeImage} alt=""/>
                   <img className="w-6 h-6" src={heart} alt=""/>
-                  <p>3</p>
+                  <p>{post_likes}</p>
                   {/* <img className="w-6 h-6" src={care} alt=""/>
                   <img className="w-6 h-6" src={angry} alt=""/>
                   <img className="w-6 h-6" src={sad} alt=""/>
@@ -87,8 +86,8 @@ const ShowPost = ({singlePost}) => {
                <div className=" flex justify-between p-4 px-8 mx-8 pb-4 border-y-2
 
 ">
-                      <div className="flex items-center gap-1 hover:bg-gray-200 p-2" onClick={likeHandeler}>
-                      <AiOutlineLike/> 
+                      <div className="flex items-center gap-1 hover:bg-gray-200 p-2 cursor-pointer" onClick={likeHandeler} >
+                      <AiOutlineLike  /> 
                           <p>Like</p>
                       </div>
                       <div className="flex items-center gap-1">

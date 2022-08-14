@@ -75,8 +75,8 @@
                 "user_photo_url":"https://i.ibb.co/mhYZvr0/photo-man.jpg",
                 "post" : "This is post from 2",
                 "post_image_url" : "https://i.ibb.co/99Dq11d/agricultural-machine-bangladesh-evergreen-green-rever-wallpaper-preview.jpg",
-                "post_likes" : 12,
-                "post_time" :  "2 hrs",
+                "post_likes" : 10,
+                "post_time" :  "20 hrs",
                 "conments" : [
                     {
                         "user_id" : "1",
@@ -98,7 +98,7 @@
                 "user_name" : "Don",
                 "user_photo_url" : "https://i.ibb.co/rdvKmKH/photo-man.jpg",
                 "post_image_url" : "https://i.ibb.co/y8xbqF2/thumb-1572360695.jpg",
-                "post_likes" : 12,
+                "post_likes" : 2,
                 "conments" : [
                     {
                         "user_id" : "1",
@@ -120,7 +120,7 @@
                 "user_photo_url" : "https://i.ibb.co/74fHTJ4/people3.png",
                 "post" : "Nice village view ",
                 "post_image_url" : "https://i.ibb.co/99Dq11d/agricultural-machine-bangladesh-evergreen-green-rever-wallpaper-preview.jpg",
-                "post_likes" : 12,
+                "post_likes" : 52,
                 "post_time" :  "5 hrs",
                 "conments" : [
                     {
@@ -147,7 +147,7 @@
                 "user_photo_url" : "https://i.ibb.co/SmnzRvD/people1.png",
                 "post" : "This is post from 2",
                 "post_image_url" : "https://i.ibb.co/b2TTzdS/What-is-Unit-Testing-and-Why-Developer-Should-Learn-It.png",
-                "post_likes" : 12,
+                "post_likes" :19,
                 "post_time" :  "8 hrs",
                 "conments" : [
                     {
@@ -170,7 +170,7 @@
                 "user_photo_url" : "https://i.ibb.co/SmnzRvD/people1.png",
                 "post" : "This is post from 2",
                 "post_image_url" : "https://i.ibb.co/y8xbqF2/thumb-1572360695.jpg",
-                "post_likes" : 12,
+                "post_likes" : 32,
                 "post_time" :  "2 hrs",
                 "conments" : [
                     {
