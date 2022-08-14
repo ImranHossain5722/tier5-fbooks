@@ -18,7 +18,7 @@ const ShowPost = () => {
   return (
     <div className="">
       <div className="">
-        <div className="max-w-[750px] bg-white shadow-md rounded-md">
+        <div className=" mx-auto max-w-sm md:max-w-md lg:max-w-[750px] bg-white shadow-md rounded-xl mb-4 ">
           <div className="flex items-start">
             <div
               className="w-14 h-14 bg-gray-300 m-4 rounded-full"
@@ -39,7 +39,7 @@ const ShowPost = () => {
             <h3 className="text-[18px] font-semibold mt-3 ml-[-8px]">
               Adom Jhon
             </h3>
-            <BsThreeDots className="relative left-[502px]  top-4" />
+            <BsThreeDots className="relative  left-[130px] md:left-[202px] lg:left-[250px]  top-4" />
             
           </div>
           <div>
@@ -74,7 +74,7 @@ const ShowPost = () => {
               </div>
             </div>
                
-               <div className=" flex justify-between p-4 px-8 mx-8 mb-4 border-y-2
+               <div className=" flex justify-between p-4 px-8 mx-8 pb-4 border-y-2
 
 ">
                       <div className="flex items-center gap-1">

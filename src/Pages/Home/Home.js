@@ -8,19 +8,18 @@ const Home = () => {
   return (
     <div>
       <div className="flex justify-between ">
-        <div className="flex  bg-[#F0F2F5] max-h-screen overflow-y-scroll w-[300px]">
+        <div className="mt-[80px] bg-[#F0F2F5] fixed top-0 bottom-0 overflow-y-scroll w-[20%]  hidden lg:block">
           <LeftSideBar />
         </div>
-        <div className="NewFeed flex justify-center items-center max-h-screen overflow-auto bg-[#F0F2F5] px-11 w-[500px]">
+        <div className="NewFeed mt-[80px] flex justify-center items-center h-full bg-[#F0F2F5] w-[55%]">
           <NewsFeed />
         </div>
-        <div className="flex  bg-[#d9dfe8] max-h-screen  hover:overflow-y-scroll  w-[350px]">
+        <div
+          className=" mt-[80px] bg-[#F0F2F5]  fixed  top-0 bottom-0 overflow-y-scroll right-0  w-[22%] hidden lg:block"  >
           <RightSideBar />
         </div>
       </div>
-      <div className="">
-        
-      </div>
+      <div className=""></div>
     </div>
   );
 };

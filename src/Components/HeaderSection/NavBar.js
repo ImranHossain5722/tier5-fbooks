@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../Assets/Images/Tier5Fbooks.png";
+import logo from "../../Assets/Images/Tier5books.png";
 import { GoSearch } from "react-icons/go";
 import { BsPersonFill } from "react-icons/bs";
 import { BsMessenger } from "react-icons/bs";
@@ -8,7 +8,7 @@ import { BsFillBellFill } from "react-icons/bs";
 
 const NavBar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar ">
 
         {/* for mobile menu */}
         <div className="bg-[#3B5998]  border-gray-200 dark:bg-gray-900 shadow-md py-2 flex lg:hidden">
@@ -38,11 +38,11 @@ const NavBar = () => {
 
             {/* desktop mmeu */}
    
-      <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-md py-2">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-md fixed top-0  w-full md:w-full lg:w-full  h-[80px] z-50 py-2">
 
         <div class="flex  justify-between items-center  max-w-screen-full  py-2.5">
           <a href="/" class="flex items-start pl-4 ">
-            <img src={logo} class="mr-3 h-6 sm:h-9" alt="Logo" />
+            <img src={logo} class="mr-3 w-[180px]  sm:h-9" alt="Logo" />
           </a>
 
           <div className="flex items-center bg-gray-100  lg:w-1/2 rounded-2xl py-2 hover:bg-gray-200 ">

@@ -9,7 +9,7 @@ import ShowPost from '../ShowPost/ShowPost';
 const Post = () => {
     return (
         <div className=''>
-            <div className='post mt-6 bg-white  rounded-xl shadow-md '>
+            <div className='post mt-6 bg-white rounded-xl shadow-md  mx-auto max-w-sm md:max-w-md lg:max-w-[100%]'>
             <div className='flex items-center'> 
               <div className='w-14 h-14 bg-gray-300 m-4 rounded-full'
               style={{
@@ -19,22 +19,24 @@ const Post = () => {
                 backgroundRepeat: "no-repeat",
               }} >
               </div>
-              <input className='flex justify-center bg-gray-200 px-7 mx-auto  w-5/6 h-12 rounded-xl focus:outline-none hover:bg-gray-100'
+              {/* searc input field  */}
+              <input className='flex justify-center mr-3  bg-gray-200 px-7 mx-auto  w-5/6 h-12 rounded-xl focus:outline-none hover:bg-gray-100'
               placeholder='Whats on your mind' />
             </div> 
-            <div className=' w-5/6 h-[1px] bg-gray-200 mx-auto'> </div>
-             <div className='flex '>
-                 <div className=' flex items-center gap-2 p-5'>
-                 <RiVideoAddFill className="ml-[20px] text-[25px] text-red-500" />
-                 <h2 className='text-gray-400 font-semibold '>Live Video </h2>
+            <div className='  h-[1px] bg-gray-200 '> </div>
+
+             <div className='flex mx-auto max-w-sm md:max-w-md lg:max-w-lg '>
+                 <div className=' flex items-center lg:gap-2  '>
+                 <RiVideoAddFill className="ml-[20px] text-[16px] lg:text-[20px] text-red-500" />
+                 <h2 className='text-gray-400 font-semibold text-[13px] lg:text-[16px]'>Live Video </h2>
                  </div>
                  <div className=' flex items-center gap-2 p-5'>
-                 < MdOutlinePhotoLibrary  className="ml-[2px] text-[25px] text-green-800" />
-                 <h2 className='text-gray-400 font-semibold '> Photo/ Video </h2>
+                 < MdOutlinePhotoLibrary  className="ml-[2px] text-[16px] lg:text-[20px] text-green-800" />
+                 <h2 className='text-gray-400 font-semibold text-[13px] lg:text-[16px]'> Photo/ Video </h2>
                  </div>
                  <div className=' flex items-center gap-2 p-5'>
-                 < GoSmiley  className="ml-[2px] text-[25px] text-yellow-400" />
-                 <h2 className='text-gray-400 font-semibold'> Feeling/activity </h2>
+                 < GoSmiley  className="ml-[2px] text-[16px] lg:text-[20px] text-yellow-400" />
+                 <h2 className='text-gray-400 font-semibold text-[13px] lg:text-[16px]'> Feeling/activity </h2>
                  </div>
              </div>
             </div>
@@ -44,6 +46,8 @@ const Post = () => {
            </div>
 
            <div className="mt-6" >
+           <ShowPost/>
+           <ShowPost/>
            <ShowPost/>
            <ShowPost/>
            <ShowPost/>

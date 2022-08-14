@@ -11,10 +11,10 @@ import'./NewsFeed.css'
 import Post from '../Post/Post';
 const NewsFeed = () => {
     return (
-        <div className='max-h-screen'>
+        <div className='max-h-screen mx-auto max-w-sm md:max-w-md lg:max-w-lg'>
             
-
-            <div className='flex gap-4'>
+              {/* facbook story  */}
+            <div className='flex gap-4 '>
                 <div className='bg-gray-500 w-[130px] h-[200px] rounded-md mt-5 relative shadow-md cursor-pointer'
                 style={{
                     background:`url(${imran})`,
@@ -111,6 +111,7 @@ const NewsFeed = () => {
                 </div>
                      
            </div>
+           {/* post  */}
            <Post/>
 
         </div>

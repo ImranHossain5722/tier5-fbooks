@@ -1,10 +1,15 @@
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
+import { BsGiftFill } from "react-icons/bs";
 import group2 from "../../Assets/Images/group2.jpg";
 import wp from "../../Assets/Images/wp.png";
 import jira from "../../Assets/Images/jira.jfif";
-import './RightSideBar.css'
-
+import giftbox from "../../Assets/Images/giftbox.png";
+import "./RightSideBar.css";
+import { RiVideoAddFill } from "react-icons/ri";
+import {GrSearch} from "react-icons/gr";
+import {BsThreeDots} from "react-icons/bs";
+import Contacts from "../Contacts/Contacts";
 
 const RightSideBar = () => {
   return (
@@ -14,25 +19,51 @@ const RightSideBar = () => {
           Sponsored
         </p>
       </div>
+      {/* add */}
+      <div className="add mt-5">
+        <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+          <img className=" w-36 text-[#056BE1] rounded-lg" src={wp}  alt="" />
+          <p className=" px-4 w-full text-black text-[15px]   dark:bg-gray-800 dark:border-gray-600">
+            Wrodpress developemnt
+          </p>
+        </div>
+      </div>
+        {/* birthday */}
+      <div class="flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+        <p className="py-2 px-4 w-full text-black text-lg    dark:bg-gray-800 dark:border-gray-600">
+          Birthday
+        </p>
+      </div>
+      <div className="add mt-5">
+        <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+        <img  src={giftbox} className="w-10" alt="" />
+          <p className=" px-4 text-black text-[15px] text-left  w-[250px] dark:bg-gray-800 dark:border-gray-600">
+           Adom and Anna have 
+           birthdays today
+          </p>
+        </div>
+      </div>
 
-      <div className="sponser">
-      <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
-        <img className=" w-36 text-[#056BE1] rounded-lg" src={wp} />
-        <p className=" px-4 w-full text-black text-[16px]   dark:bg-gray-800 dark:border-gray-600">
-          Wro 
-        </p>
+      {/* contact */}
+      <div className="mt-6 flex gap-x-14">
+        <div className="">
+        <p className="font-semibold pl-5" >Contacts</p>
+        </div>
+        <div className="flex items-center gap-8">
+        <RiVideoAddFill className=" text-gray-600"/> 
+        <GrSearch/>
+        <BsThreeDots/>
+        </div>
       </div>
-       <p className="text-center text-[10px] text-gray-400 mt-[-10px] " >wordpress.com</p>
-      </div>
-      <div className="sponser">
-      <div class="flex items-center   dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
-        <img className=" w-36 h-36  text-[#056BE1] rounded-lg" src={jira} />
-        <p className=" px-4 w-full text-black text-[16px]  dark:bg-gray-800 dark:border-gray-600">
-          You  
-        </p>
-      </div>
-       <p className="text-center text-[10px] text-gray-400 mt-[-10px] " >jirabc.com</p>
-      </div>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
+        <Contacts/>
     </div>
   );
 };
