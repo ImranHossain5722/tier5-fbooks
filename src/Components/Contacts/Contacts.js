@@ -1,13 +1,17 @@
 import React from 'react';
 import imran from "../../Assets/Images/story_image.jpg";
 import {BsDot}from "react-icons/bs"
-const Contacts = () => {
+const Contacts = ({user}) => {
+  console.log(user)
+  const {user_name, user_photo_url} = user
+        console.log(user)
     return (
+      
         <div>
             <div className='flex items-center'>
             <div className='w-11 h-11 bg-gray-300 m-4 rounded-full'
               style={{
-                background:`url(${imran})`,
+                background:`url(${user_photo_url})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
@@ -15,7 +19,7 @@ const Contacts = () => {
                       <BsDot className='relative top-3 left-4  text-[#2F9A48] text-[45px] '/>
                 
               </div>
-               <p>Imran Hossain</p>
+               <p>{user_name}</p>
 
             </div>
         </div>

@@ -51,7 +51,7 @@ const CreateRoom = () => {
             nextEl: "#next_slide",
           }}
           modules={[Autoplay, Navigation]}
-          autoplay={true}
+          autoplay={false}
           className="mySwiper"
           style={{ "--swiper-theme-color": "#27AE61" }}
           onInit={(swiper) => {

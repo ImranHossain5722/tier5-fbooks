@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BsGiftFill } from "react-icons/bs";
 import group2 from "../../Assets/Images/group2.jpg";
@@ -12,6 +12,14 @@ import {BsThreeDots} from "react-icons/bs";
 import Contacts from "../Contacts/Contacts";
 
 const RightSideBar = () => {
+
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch("user.json")
+      .then((response) => response.json())
+      .then((data) => setUsers(data[0].user_data));
+  }, []);
+    
   return (
     <div className="RightSideBar">
       <div class="flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
@@ -55,15 +63,12 @@ const RightSideBar = () => {
         <BsThreeDots/>
         </div>
       </div>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
-        <Contacts/>
+      {
+        users.map((user) =>(
+          <Contacts key={user.id} user={user} />
+        ))}
+       
+        
     </div>
   );
 };

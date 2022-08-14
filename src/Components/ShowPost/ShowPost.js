@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import imran from "../../Assets/Images/story_image.jpg";
 import { GiEarthAmerica } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
 import Pogramming from "../../Assets/Images/post1.jpg";
-import like from '../../Assets/Images/like.svg'
+import likeImage from '../../Assets/Images/like.svg'
 import heart from '../../Assets/Images/heart.svg'
 import care from '../../Assets/Images/care.svg'
 import sad from '../../Assets/Images/sad.svg'
@@ -14,11 +14,19 @@ import { comment } from "postcss";
 import { AiOutlineLike } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
-const ShowPost = ({post}) => {
+const ShowPost = ({singlePost}) => {
 
-   console.log(post)
-   const {Post,post_image_url,post_likes,} = post
-   
+  //  console.log(singlePost)
+   const {post, post_image_url,post_likes, user_photo_url,user_name,post_time,conments} = singlePost
+
+  const [like ,setLike] = useState(post_likes)
+  const [islike ,seIstLike] = useState(false)
+
+  // like 
+  const likeHandeler =()=>{
+
+
+  }
   return (
     <div className="">
       <div className="">
@@ -27,34 +35,32 @@ const ShowPost = ({post}) => {
             <div
               className="w-14 h-14 bg-gray-300 m-4 rounded-full"
               style={{
-                background: `url(${imran})`,
-                backgroundSize: "cover",
+                background: `url(${user_photo_url})`,
+                backgroundSize: "content",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }}
             >
               <div className="">
+                {/* post time */}
                 <small className="flex gap-1 items-center relative top-8 left-16 text-gray-500 font-semibold">
-                  1 hrs . <GiEarthAmerica />{" "}
+                {post_time}. <GiEarthAmerica />{" "}
                 </small>
               </div>
             </div>
 
             <h3 className="text-[18px] font-semibold mt-3 ml-[-8px]">
-              Adom Jhon
+            {user_name}
             </h3>
             <BsThreeDots className="relative  left-[130px] md:left-[202px] lg:left-[200px]  top-4" />
             
           </div>
           <div>
+            {/* post des */}
             <p className="px-4">
-              JavaScript, often abbreviated JS, is a programming language that
-              is one of the core technologies of the World Wide Web, alongside
-              HTML and CSS. As of 2022, 98% of websites use JavaScript on the
-              client side for webpage behavior, often incorporating third-party
-              libraries
+              {post}
             </p>
-            <img className="pt-4 w-full " src={Pogramming} />
+            <img className="pt-4 w-full " src={post_image_url} alt='' />
           </div>
           {/* like comment share */}
           <div className="likeCommentShar mb- ">
@@ -62,26 +68,26 @@ const ShowPost = ({post}) => {
 
                 {/* imoje */}
               <div className="flex gap-1">
-                  <img className="w-6 h-6" src={like} alt=""/>
+                  <img className="w-6 h-6" src={likeImage} alt=""/>
                   <img className="w-6 h-6" src={heart} alt=""/>
-                  <img className="w-6 h-6" src={care} alt=""/>
+                  <p>3</p>
+                  {/* <img className="w-6 h-6" src={care} alt=""/>
                   <img className="w-6 h-6" src={angry} alt=""/>
                   <img className="w-6 h-6" src={sad} alt=""/>
                   <img className="w-6 h-6" src={haha} alt=""/>
-                  <img className="w-6 h-6" src={wow} alt=""/>
+                  <img className="w-6 h-6" src={wow} alt=""/> */}
 
               </div>
               {/* comment */}
-              <div className="flex hover:underline cursor-pointer ">
-                <p>10</p>
-                <p>Comments</p>
+              <div className="flex hover:underline cursor-pointer">
+                <p>{conments.length} Comments</p>
               </div>
             </div>
                
                <div className=" flex justify-between p-4 px-8 mx-8 pb-4 border-y-2
 
 ">
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-1 hover:bg-gray-200 p-2" onClick={likeHandeler}>
                       <AiOutlineLike/> 
                           <p>Like</p>
                       </div>
