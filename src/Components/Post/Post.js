@@ -44,8 +44,8 @@ const Post = () => {
             </h2>
           </div>
           <div className=" flex items-center gap-2 ">
-            <MdOutlinePhotoLibrary className=" text-[16px] lg:text-[20px] text-green-800" />
-            <h2 className="text-gray-400 font-semibold text-[13px] lg:text-[16px]">
+            <MdOutlinePhotoLibrary className=" text-[16px] lg:text-[20px] text-green-800 " />
+            <h2 className="text-gray-400 font-semibold text-[13px] lg:text-[16px] pr-2">
               {" "}
               Photo/ Video{" "}
             </h2>
