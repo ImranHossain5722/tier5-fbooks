@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import imran from "../../Assets/Images/story_image.jpg";
 import { GiEarthAmerica } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
@@ -18,14 +18,21 @@ const ShowPost = ({singlePost}) => {
 
   //  console.log(singlePost)
    const {post, post_image_url,user_photo_url,user_name,post_time,conments} = singlePost
+  
 
   const [post_likes ,setPost_likes] = useState(singlePost.post_likes)
   const [islike ,seIstLike] = useState(false)
-
   const likeHandeler =()=>{
     setPost_likes(islike ? post_likes -1 : post_likes+1)
     seIstLike(!islike)
   }
+
+  const [userComments, setUseComments] = useState([]);
+  useEffect(() => {
+    fetch("user.json")
+      .then((response) => response.json())
+      .then((data) => console.log(data.post_data?.comments));
+  }, []);
   return (
     <div className="">
       <div className="">
@@ -79,7 +86,8 @@ const ShowPost = ({singlePost}) => {
               </div>
               {/* comment */}
               <div className="flex hover:underline cursor-pointer">
-                <p>{conments.length} Comments</p>
+                <p>  {conments.length} Comments</p>
+               
               </div>
             </div>
                

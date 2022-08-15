@@ -29,7 +29,7 @@ const RightSideBar = () => {
       </div>
       {/* add */}
       <div className="add mt-5">
-        <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
+        <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4 cursor-pointer">
           <img className=" w-36 text-[#056BE1] rounded-lg" src={wp}  alt="" />
           <p className=" px-4 w-full text-black text-[15px]   dark:bg-gray-800 dark:border-gray-600">
             Wrodpress developemnt

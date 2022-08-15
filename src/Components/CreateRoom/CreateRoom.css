@@ -1,7 +1,7 @@
-/* .swiper-button-disabled {
+.swiper-button-disabled {
 
     display: none !important;
-} */
+}
 
 
 .swiper-slide{
@@ -20,8 +20,8 @@
 
 }
 .swiper_button {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,16 +39,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid #ebebeb;
-
+    
     padding: 30px;
     transition: 0.3s;
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    top: 0;
+    right: 0;
+    top: 15px ;
     z-index:5;
-    background: rgba(244, 241, 241, 0.983);
+    background: rgba(244, 241, 241, 0.993);
 }
 
 .swiper_button_prev{
@@ -56,14 +55,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid #ebebeb;
+    
     color: #060908;
     padding: 30px;
     transition: 0.3s;
     cursor: pointer;
     position: absolute;
-    left: 20px;
-    top: 0;
-    z-index: 2;
-    background: rgba(244, 241, 241, 0.983);
+    left: 0;
+    top:15px;
+    z-index:2;
+    background: rgba(255, 247, 247, 0.979);
 }

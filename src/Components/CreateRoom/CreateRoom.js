@@ -5,6 +5,8 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import { MdVideoCall } from "react-icons/md";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
+import left  from "../../Assets/Images/left.png";
+import right  from "../../Assets/Images/right.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -66,17 +68,18 @@ const CreateRoom = () => {
 
             <div className="swiper-slide py-6 flex items-center justify-center hover:fill-blue-500">
               <div>
-                <button className=" flex btn">
-                  <MdVideoCall /> Create room
+                <button className=" flex items-center bg-white border border-1-gray-200 rounded-2xl p-2 text-[#1877F2] text-[11px]">
+                  <MdVideoCall className="text-[#B846AA] 
+                  text-[30px]" /> Create room
                 </button>
               </div>
             </div>
           </SwiperSlide>
           {users?.map((user) => (
             <SwiperSlide key={user.id}>
-              <div class="avatar online ">
-                <div class="w-14 rounded-full">
-                  <img className="w-10 h-10  rounded-full" src={user.image} />
+              <div class="avatar online mt-[30px]">
+                <div class="w-16 ">
+                  <img className= "w-6 h-6 rounded-full gap-4" src={user.image} />
                 </div>
               </div>
 
@@ -84,11 +87,17 @@ const CreateRoom = () => {
             </SwiperSlide>
           ))}
           <div className="swiperSlide_button_group">
-            <div className="swiper_button swiper_button_prev" ref={prevRef}>
-            <FaAngleLeft className=" text-black"/>
+            <div style={{background:`url(${left})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",}} className="swiper_button swiper_button_prev" ref={prevRef}>
+            {/* <img  className="z-50" src={left} alt='' /> */}
             </div>
-            <div className="swiper_button swiper_button_next" ref={nextRef}>
-            <FaAngleRight/>
+            <div style={{background:`url(${right})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",}} className="swiper_button swiper_button_next" ref={nextRef}>
+            {/* <FaAngleRight/> */}
             </div>
           </div>
           
