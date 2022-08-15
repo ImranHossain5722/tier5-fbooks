@@ -7,6 +7,9 @@
 # Use Teecnolgy
  * React js
  * React icon
+ * React Router
+ * Tailwind CSS
+ * flowbite
  * Swiper Js
  * vs code editor
  * Firebase for hosting
